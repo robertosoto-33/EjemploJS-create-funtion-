@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="js/utilidades.js"></script>
 </head>
 
 <body>
@@ -13,15 +14,15 @@
     <h2>Ejemplo Modificacion arbol DOM</h2>
 
     <script>
-        function CrearElemento(tag, text) {
+        function createElementX(tag, text) {
             element = document.createElement(tag)
             element.textContent = text
             document.body.appendChild(element)
         }
 
-        CrearElemento('h1', 'Ejemplo JS dinamico')
-        createElement('p','Elemplo P dinamico')
-        createElement('h2','Elemplo h2 dinamico')
+        // createElementX('h1', 'Ejemplo JS dinamico')
+        // createElementX('p', 'Elemplo P dinamico')
+        // createElementX('h2', 'Elemplo h2 dinamico')
 
         // h1 = document.createElement('h1')
         // h1Tex = document.createTextNode('Texto creado en  modo ejecucuion')
@@ -36,6 +37,12 @@
         // p = document.createElement('p')
         // p.textContent = 'p creado con JS'
         // document.body.appendChild(p)
+
+        createElementText('h1', 'Ejemplo JS dinamico')
+        createElementText('p', 'Elemplo P dinamico')
+        createElementText('h2', 'Elemplo h2 dinamico')
+        createElementImg('recursos\\imagenes\\que-hace-front-end.jpg', 'Ejemplo Imagen de fornt end')
+
 
 
 
