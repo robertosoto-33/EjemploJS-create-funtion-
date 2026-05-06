@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ejemplo java scriot</h1>
+
+    <h2>Ejemplo Modificacion arbol DOM</h2>
+
+    <script>
+        function CrearElemento(tag, text) {
+            element = document.createElement(tag)
+            element.textContent = text
+            document.body.appendChild(element)
+        }
+
+        CrearElemento('h1', 'Ejemplo JS dinamico')
+        createElement('p','Elemplo P dinamico')
+        createElement('h2','Elemplo h2 dinamico')
+
+        // h1 = document.createElement('h1')
+        // h1Tex = document.createTextNode('Texto creado en  modo ejecucuion')
+        // h1.appendChild(h1Tex)
+
+        // document.body.appendChild(h1)
+
+        // pDos = document.createElement('p')
+        // pDos.textContent = 'p creado con JS'
+        // document.body.appendChild(pDos)
+
+        // p = document.createElement('p')
+        // p.textContent = 'p creado con JS'
+        // document.body.appendChild(p)
+
+
+
+    </script>
+</body>
+
+</html>
